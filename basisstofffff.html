@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biology Notes</title>
+  <style>
+    /* General reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Silkscreen", sans-serif;
+      background-color: #fdbde0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container for the notes */
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fdbde0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .bold {
+      text-decoration: underline;
+      font-weight: 900;
+      font-size: 15px;
+    }
+
+    .end {
+      font-weight: 1000;
+      font-size: 30px;
+      padding-left: 60px;
+    }
+
+    /* Headings */
+    h1, h2, h3 {
+      color: #a3087c;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 900;
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    /* Paragraphs */
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-bottom: 10px; /* Adjusted margin-bottom for ul and ol */
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px; /* Adjusted margin-bottom for li */
+    }
+
+    /* Responsive design */
+    @media (max-width: 1024px) {
+      .container {
+        width: 95%;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+      ul, ol {
+        padding-left: 15px;
+      }
+      li {
+        margin-bottom: 3px;
+      }
+      .clickable-image {
+        width: 100%;
+        height: auto;
+      }
+      .end {
+        font-size: 24px;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+      ul, ol {
+        padding-left: 10px;
+      }
+      li {
+        margin-bottom: 2px;
+      }
+      .clickable-image {
+        width: 100%;
+        height: auto;
+      }
+      .end {
+        font-size: 22px;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 95%;
+        padding: 10px;
+      }
+      h1 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+      ul, ol {
+        padding-left: 10px;
+      }
+      li {
+        margin-bottom: 2px;
+      }
+      .clickable-image {
+        width: 100%;
+        height: auto;
+      }
+      .end {
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Title -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Biology Notes</title>
+      <style>
+        /* General reset */
+        body, html {
+          margin: 0;
+          padding: 0;
+          font-family: "Silkscreen", sans-serif;
+          background-color: #fdbde0;
+          color: #333;
+          line-height: 1.6;
+        }
+    
+        /* Container for the notes */
+        .container {
+          width: 90%;
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fdbde0;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .bold {
+          text-decoration: underline;
+          font-weight: 900;
+          font-size: 15px;
+        }
+    
+        .end {
+          font-weight: 1000;
+          font-size: 30px;
+          padding-left: 60px;
+        }
+    
+        /* Headings */
+        h1, h2, h3 {
+          color: #a3087c;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: 900;
+          text-decoration: underline;
+        }
+    
+        h1 {
+          font-size: 24px;
+          text-align: center;
+        }
+    
+        h2 {
+          font-size: 20px;
+        }
+    
+        h3 {
+          font-size: 18px;
+        }
+    
+        /* Paragraphs */
+        p {
+          margin-bottom: 15px;
+        }
+    
+        /* Lists */
+        ul, ol {
+          margin-bottom: 10px; /* Adjusted margin-bottom for ul and ol */
+          padding-left: 20px;
+        }
+    
+        li {
+          margin-bottom: 5px; /* Adjusted margin-bottom for li */
+        }
+    
+        /* Responsive design */
+        @media (max-width: 1024px) {
+          .container {
+            width: 95%;
+            padding: 15px;
+          }
+          h1 {
+            font-size: 22px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 14px;
+          }
+          ul, ol {
+            padding-left: 15px;
+          }
+          li {
+            margin-bottom: 3px;
+          }
+          .clickable-image {
+            width: 100%;
+            height: auto;
+          }
+          .end {
+            font-size: 24px;
+            padding-left: 0;
+            text-align: center;
+          }
+        }
+    
+        @media (max-width: 768px) {
+          .container {
+            width: 95%;
+            padding: 15px;
+          }
+          h1 {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+          h3 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+          ul, ol {
+            padding-left: 10px;
+          }
+          li {
+            margin-bottom: 2px;
+          }
+          .clickable-image {
+            width: 100%;
+            height: auto;
+          }
+          .end {
+            font-size: 22px;
+            padding-left: 0;
+            text-align: center;
+          }
+        }
+    
+        @media (max-width: 480px) {
+          .container {
+            width: 95%;
+            padding: 10px;
+          }
+          h1 {
+            font-size: 18px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+          h3 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+          ul, ol {
+            padding-left: 10px;
+          }
+          li {
+            margin-bottom: 2px;
+          }
+          .clickable-image {
+            width: 100%;
+            height: auto;
+          }
+          .end {
+            font-size: 20px;
+            padding-left: 0;
+            text-align: center;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <!-- Title -->
+        <h1>Basisstof 10</h1>
+        <p> <span class=bold>Bewuste reacties</span></p>
+<ul> is precies wat ik je heb gezegt over die voorbeeld in basisstof 6 waar j me slaat</ul>
+<p> <span class="bold"> IN HELE MAKKELIJKE WOORDEN GEZEGT</span></ul>
+    <ul> je klapt me -> impuls onstaat die naar -> gevoelzenuwcel gaat -> impuls gaat naar schakelcel en daarna -> ruggenmerg en naar hersenen -> ik voel dat je me slaat -> ik kies om je terug te slaan -> impuls gaat van hersenen naar schakelcel brengt impuls -> naar bewegingszenuwcel -> Bewegingszenuwcel brengt impuls naar spier -> ik sla je terug
+    </ul>
+    <ul> <span class=bold>als j ni begrijp app me gw</span></ul>
+
+    <p> <span class=bold>onbewuste reactie (reflex)</span></p>
+    <ul> stel als j je hand onder echt heet water zet, er gaat een impuls onstaan in de zintuigcellen, en daarna gaat de impuls naar j gevoelzenuwcel die dan de impuls in j schakelcel brengt en dan gaat de schakelcel direkt de impuls naar je Bewegingszenuwcel brengen zonder dat de impuls eerst bij je hersenen komt, omdat de weg van je ruggenmerg naar je hersen is verder dan de weg van j ruggenmerg naar je armspieren, daarom beweegt je arm eerst en daarna voel je het
+    </ul>
+<p> <span class=bold> Echttt echt makkelijk gezegt</span></p>
+<ul> heet water gaat op hand -> impuls onstaat dan gaat naar -> gevoelzenuwcel -> impuls gaat verder naar schakelcel -> impuls gaat dan direk naar bewegingszenuwcel en hersenen ->impuls gaat dan naar spier -> arm beweegt -> impuls die naar hersen ging is nu bij hersenen en nu pas voel je die pijn nadat je hand is bewogen</ul>
+
+<p> <span class=bold> dus het verschil tussen bewuste en onbewuste reacties is bij bewuste reactie gaat de impuls eerst naar je hersen en daarna naar je spier maar bij onbewuste reactie gaat de impuls eerst naar je spier en daarna je hersen</span></p>
+
+    </div>
+    </body>
+    </html>

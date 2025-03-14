@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <title>GA STUDEREN</title>
+  <style>
+    /* General reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Silkscreen", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: #eebcbc;
+    }
+
+    /* Container for the images and text */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 90%;
+      max-width: 450px; /* Adjust for larger screens */
+      gap: 20px; /* Space out items evenly */
+    }
+
+    /* Style for the images */
+    .clickable-image {
+      width: 100%;
+      max-width: 350px; /* Adjust image size */
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    /* Style for the text below images */
+    .image-text {
+      font-size: 20px; /* Adjust font size */
+      color: #333;
+      font-family: "Silkscreen", sans-serif;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 1024px) {
+      .container {
+        max-width: 90%;
+      }
+      .clickable-image {
+        max-width: 300px;
+      }
+      .image-text {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 90%;
+      }
+      .clickable-image {
+        max-width: 250px;
+      }
+      .image-text {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        max-width: 100%;
+      }
+      .clickable-image {
+        max-width: 200px;
+      }
+      .image-text {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- First Image -->
+    
+
+    <!-- Second Image -->
+    <a href="aantekeningen.html">
+      <img src="notes.png" alt="Image 2" class="clickable-image">
+    </a>
+    <p class="image-text">Aantekeningen</p>
+
+    <!-- Third Image -->
+    <a href="fotos.html">
+      <img src="brain.png" alt="Image 3" class="clickable-image">
+    </a>
+    <p class="image-text">Alle fotos die je moet kennen</p>
+  </div>
+</body>
+</html>

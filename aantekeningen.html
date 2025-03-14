@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <title>Clickable Texts</title>
+  <style>
+    /* General reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Silkscreen", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: #ffc6c6;
+    }
+
+    /* Container for the clickable texts */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 90%;
+      max-width: 300px; /* Adjust for larger screens */
+      gap: 20px; /* Space out items evenly */
+    }
+
+    /* Style for the clickable texts */
+    .clickable-text {
+      display: block;
+      margin: 20px 0; /* Space between texts */
+      font-size: 22px; /* Adjust font size */
+      color: #ffffff;
+      text-decoration:dotted;
+      cursor: pointer;
+      transition: color 0.2s ease, transform 0.2s ease;
+      border: 2px solid #000000; /* Add border */
+      padding: 10px; /* Add padding */
+      border-radius: 5px; /* Add border radius */
+    }
+
+    .clickable-text:hover {
+      color: #ffffff; /* Darker blue on hover */
+      border-color: #000000; /* Change border color on hover */
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 1024px) {
+      .container {
+        max-width: 90%;
+      }
+      .clickable-text {
+        font-size: 24px; /* Slightly larger font size */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 90%;
+      }
+      .clickable-text {
+        font-size: 22px; /* Slightly larger font size */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        max-width: 100%;
+      }
+      .clickable-text {
+        font-size: 20px; /* Slightly larger font size */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Clickable Text 1 -->
+    <a href="basisstof.html" class="clickable-text">Basisstof 6</a>
+
+    <!-- Clickable Text 2 -->
+    <a href="basisstoff.html" class="clickable-text">Basisstof 7</a>
+
+    <!-- Clickable Text 3 -->
+    <a href="basisstofff.html" class="clickable-text">Basisstof 8</a>
+
+    <!-- Clickable Text 4 -->
+    <a href="basisstoffff.html" class="clickable-text">Basisstof 9</a>
+
+    <!-- Clickable Text 5 -->
+    <a href="basisstofffff.html" class="clickable-text">Basisstof 10</a>
+  </div>
+</body>
+</html>
