@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-  <title>Clickable Texts</title>
+  <title>Basisstoffen</title>
   <style>
     /* General reset */
     body, html {
@@ -37,7 +37,7 @@
       margin: 20px 0; /* Space between texts */
       font-size: 22px; /* Adjust font size */
       color: #ffffff;
-      text-decoration:dotted;
+      text-decoration: dotted;
       cursor: pointer;
       transition: color 0.2s ease, transform 0.2s ease;
       border: 2px solid #000000; /* Add border */
@@ -52,12 +52,27 @@
     }
 
     /* Media queries for responsiveness */
-    @media (max-width: 1024px) {
+    @media (min-width: 1024px) {
       .container {
+        flex-direction: row; /* Place texts side by side */
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px; /* Adjust for larger screens */
+      }
+      .clickable-text {
+        flex: 1 1 45%; /* Ensure texts take up equal space */
+        margin: 10px; /* Adjust margin for spacing */
+        font-size: 24px; /* Slightly larger font size */
+      }
+    }
+
+    @media (max-width: 1023px) {
+      .container {
+        flex-direction: column; /* Stack texts on top of each other */
         max-width: 90%;
       }
       .clickable-text {
-        font-size: 24px; /* Slightly larger font size */
+        font-size: 22px; /* Slightly larger font size */
       }
     }
 
@@ -66,7 +81,7 @@
         max-width: 90%;
       }
       .clickable-text {
-        font-size: 22px; /* Slightly larger font size */
+        font-size: 20px; /* Slightly larger font size */
       }
     }
 
@@ -75,7 +90,7 @@
         max-width: 100%;
       }
       .clickable-text {
-        font-size: 20px; /* Slightly larger font size */
+        font-size: 18px; /* Slightly larger font size */
       }
     }
   </style>
