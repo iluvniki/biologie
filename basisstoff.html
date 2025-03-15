@@ -6,23 +6,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biology Notes</title>
+  <title>Basisstof 7</title>
   <style>
     /* General reset */
     body, html {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Silkscreen", sans-serif;
       background-color: #fdbde0;
       color: #333;
       line-height: 1.6;
-      font-family: "Silkscreen", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     /* Container for the notes */
     .container {
       width: 90%;
-      max-width: 600px;
+      max-width: 1200px;
       margin: 20px auto;
       padding: 20px;
       background-color: #fdbde0;
@@ -38,7 +41,7 @@
     .end {
       font-weight: 1000;
       font-size: 30px;
-      padding-left: 60px;
+      text-align: center;
     }
 
     /* Headings */
@@ -50,21 +53,22 @@
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 32px;
       text-align: center;
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 28px;
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 24px;
     }
 
     /* Paragraphs */
     p {
       margin-bottom: 15px;
+      font-size: 18px;
     }
 
     /* Lists */
@@ -101,9 +105,7 @@
       li {
         margin-bottom: 3px;
       }
-      
-      }
-    
+    }
 
     /* Responsive design for iPads */
     @media (min-width: 481px) and (max-width: 1024px) {
@@ -125,7 +127,32 @@
       }
       .end {
         font-size: 32px;
-         padding-left: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    /* Responsive design for laptops */
+    @media (min-width: 1025px) {
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .end {
+        font-size: 36px;
         text-align: center;
       }
     }
@@ -157,8 +184,8 @@
     <p>Een alcoholhoudende drank bestaat uit alcohol, water en smaakstoffen</p>
     <p><span class="bold">Ze worden meestal in 3 groepen verdeeld: bier, wijn en sterke drank</span></p>
 
-    <p><span class="end">j kan etttt</span></p>
-    <p><span class="end">i love you</span></p>
+    <p class="end">j kan etttt</p>
+    <p class="end">i love you</p>
   </div>
 </body>
 </html>
